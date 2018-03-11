@@ -10,7 +10,7 @@ Instalation
 ```bash
 git clone git@github.com:leonardothibes/workstation.git
 cd workstation
-./configure
+./configure.sh
 ```
 
 Compatibility list
