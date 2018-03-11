@@ -16,6 +16,10 @@ cd workstation
 Compatibility list
 ------------------
 
+ * Linux Mint 18.3
+ * macOS 10.12.x (Sierra)
+ * macOS 10.13.x (High Sierra)
+
 Author
 ------
 
