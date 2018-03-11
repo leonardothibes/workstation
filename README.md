@@ -13,6 +13,9 @@ cd workstation
 ./configure
 ```
 
+Compatibility list
+------------------
+
 Author
 ------
 
