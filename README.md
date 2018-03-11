@@ -4,6 +4,15 @@ My personal scripts to configure my workstation.
 
 Feel free to use or modify for your own purposes.
 
+Instalation
+-----------
+
+```bash
+git clone git@github.com:leonardothibes/workstation.git
+cd workstation
+./configure
+```
+
 Author
 ------
 
