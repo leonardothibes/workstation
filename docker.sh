@@ -5,4 +5,4 @@ USER=leonardo
 DIR=/home/${USER}/workstation
 
 clear
-docker run --rm -it -v $(pwd):${DIR} -w ${DIR} --user ${USER} ${IMG} bash
+docker run --rm -it -v $(pwd):${DIR} -w ${DIR} ${IMG} bash
