@@ -15,15 +15,17 @@ fi
 
 # SO
 if [ ${SO} == "Darwin" ]; then
-    FOLDER="${HERE}/mac"
+    SO="mac"
 else
-    FOLDER="${HERE}/linux"
+    SO="linux"
 fi
 # SO
 
 # The magic happens
-for DIR in "$(ls ${FOLDER})"
+for DIR in "$(ls ${HERE}/${SO})"
 do
-    echo "${DIR}"
+    SCRIPT="${HERE}/${SO}/${DIR}/configure.sh"
+    chmod 755 ${SCRIPT}
+    sh ${SCRIPT}
 done
 # The magic happens
