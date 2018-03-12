@@ -22,7 +22,7 @@ fi
 # SO
 
 # The magic happens
-for DIR in "$(ls ${HERE}/${SO})"
+for DIR in $(ls ${HERE}/${SO})
 do
     SCRIPT="${HERE}/${SO}/${DIR}/configure.sh"
     chmod 755 ${SCRIPT}
