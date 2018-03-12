@@ -6,6 +6,9 @@ HERE=$(dirname $0)
 
 clear
 
+echo " Workstation config"
+echo ""
+
 # Only root
 if [ ${WHO} -ne 0 ]; then
 	echo "É necessário ter permissão de root para rodar este script"
@@ -29,3 +32,5 @@ do
     sh ${SCRIPT}
 done
 # The magic happens
+
+echo ""

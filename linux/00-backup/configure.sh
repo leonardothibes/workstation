@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Fazendo backup das configurações..."
+echo " - Config files backup..."
 BKPDIR=/root/bkp-confs
 
 [ -d ${BKPDIR}/etc ]              || mkdir -p ${BKPDIR}
