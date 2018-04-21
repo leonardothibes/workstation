@@ -18,16 +18,6 @@ fi
 # set a fancy prompt (non-color, overwrite the one in /etc/profile)
 # PS1='${debian_chroot:+($debian_chroot)}\u@\h \w \$ '
 
-# Commented out, don't overwrite xterm -T "title" -n "icontitle" by default.
-# If this is an xterm set the title to user@host:dir
-#case "$TERM" in
-#xterm*|rxvt*)
-#    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
-#    ;;
-#*)
-#    ;;
-#esac
-
 # enable bash completion in interactive shells
 #if ! shopt -oq posix; then
 #  if [ -f /usr/share/bash-completion/bash_completion ]; then
