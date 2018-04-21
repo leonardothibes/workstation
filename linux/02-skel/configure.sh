@@ -3,15 +3,22 @@
 echo " - Home skeleton configuration..."
 CONFS=$(dirname $0)/confs
 
-[ -d /etc/skel/tmp ]  || mkdir /etc/skel/tmp
-[ -d /etc/skel/.bin ] || mkdir /etc/skel/.bin
-[ -d /etc/skel/.ssh ] || mkdir /etc/skel/.ssh
+[ -d /etc/skel/tmp ]  || mkdir -p /etc/skel/tmp  && chmod 700 /etc/skel/tmp
+[ -d /etc/skel/.bin ] || mkdir -p /etc/skel/.bin && chmod 700 /etc/skel/.bin
+[ -d /etc/skel/.ssh ] || mkdir -p /etc/skel/.ssh && chmod 700 /etc/skel/.ssh
 
 cp -f ${CONFS}/.profile /etc/skel
 cp -f ${CONFS}/.bash_logout /etc/skel
 rm -f /etc/skel/.bashrc /root/.bashrc
 
-for DIR in `ls /home`
+for USER in `ls /home`
 do
-    echo "USER: ${DIR}"
+    HOME_FOLDER=/home/${USER}
+    [ -d ${HOME_FOLDER}/tmp ]  || mkdir ${HOME_FOLDER}/tmp
+    [ -d ${HOME_FOLDER}/.bin ] || mkdir ${HOME_FOLDER}/.bin
+    [ -d ${HOME_FOLDER}/.ssh ] || mkdir ${HOME_FOLDER}/.ssh
+
+    cp -f ${CONFS}/.profile ${HOME_FOLDER}
+    cp -f ${CONFS}/.bash_logout ${HOME_FOLDER}
+    rm -f ${HOME_FOLDER}/.bashrc
 done;
