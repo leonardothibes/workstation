@@ -3,6 +3,7 @@
 echo " - PHP..."
 CONFS=$(dirname $0)/confs
 
+# PHP
 apt-get install -y php7.0          \
                    php7.0-cli      \
                    php7.0-curl     \
@@ -25,3 +26,14 @@ cp -f ${CONFS}/php.ini /etc/php/7.0/cli
 cp -f ${CONFS}/xdebug.ini /etc/php/7.0/mods-available
 
 ln -sf /etc/php/7.0/cli/php.ini /etc/php.ini
+# PHP
+
+# Composer
+cp -f ${CONFS}/composer-install.sh /tmp
+chmod 755 /tmp/*.sh
+
+$(cd /tmp ; ./composer-install.sh ; mv composer.phar /usr/local/bin/composer)
+chmod 755 /usr/local/bin/composer
+
+rm -f /tmp/*.sh
+# Composer
