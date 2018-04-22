@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " - Dotnet Core..."
+echo " - .NET..."
 VERSION=2.1.105
 
 # Repository
