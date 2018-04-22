@@ -40,5 +40,6 @@ rm -f /tmp/*.sh
 
 # Symfony
 cp -f ${CONFS}/symfony.sh /usr/local/bin/symfony
-chmod 755 /usr/local/bin/symfony
+cp -f ${CONFS}/symfony-mini.sh /usr/local/bin/symfony-mini
+chmod 755 /usr/local/bin/*
 # Symfony

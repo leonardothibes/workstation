@@ -6,4 +6,4 @@ then
     PROJECT="my_project"
 fi
 
-composer create-project symfony/website-skeleton ${PROJECT}
+composer create-project symfony/skeleton ${PROJECT}
