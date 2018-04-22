@@ -2,7 +2,7 @@
 
 echo " - Jekyll..."
 
-LOCK=/tmp/workstation.lock.update
+LOCK=/tmp/workstation.lock.jekyll
 [ -f ${LOCK} ] && return
 
 apt-get install -y ruby ruby-dev > /dev/null
