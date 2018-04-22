@@ -19,7 +19,7 @@ apt-get install -y php7.0          \
                    php7.0-xml      \
                    php7.0-dev      \
                    php-xdebug      \
-> /dev/null
+> /dev/null 2>&1
 
 cp -f ${CONFS}/php.ini /etc/php/7.0/cli
 cp -f ${CONFS}/xdebug.ini /etc/php/7.0/mods-available
