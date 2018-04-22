@@ -11,4 +11,6 @@ apt-get install -y wget            \
                    build-essential \
                    git             \
                    subversion      \
+                   dialog          \
+                   python          \
 > /dev/null
