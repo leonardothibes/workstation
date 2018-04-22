@@ -34,3 +34,5 @@ done
 # The magic happens
 
 echo ""
+echo " Done!"
+echo ""
