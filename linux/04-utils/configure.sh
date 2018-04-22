@@ -12,5 +12,4 @@ apt-get install -y wget            \
                    git             \
                    subversion      \
                    dialog          \
-                   python          \
 > /dev/null
