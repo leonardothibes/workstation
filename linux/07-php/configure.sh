@@ -22,4 +22,6 @@ apt-get install -y php7.0          \
 > /dev/null
 
 cp -f ${CONFS}/php.ini /etc/php/7.0/cli
+cp -f ${CONFS}/xdebug.ini /etc/php/7.0/mods-available
+
 ln -sf /etc/php/7.0/cli/php.ini /etc/php.ini
