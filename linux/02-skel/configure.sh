@@ -14,7 +14,7 @@ cp -f ${CONFS}/.profile /etc/skel
 cp -f ${CONFS}/.bash_logout /etc/skel
 rm -f /etc/skel/.bashrc /root/.bashrc
 
-for USER in `ls /home`
+for USER in $(ls /home)
 do
     HOME_FOLDER=/home/${USER}
     [ -d ${HOME_FOLDER}/tmp ]  || mkdir ${HOME_FOLDER}/tmp  && chown ${USER}: ${HOME_FOLDER}/tmp
