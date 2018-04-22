@@ -37,3 +37,8 @@ chmod 755 /usr/local/bin/composer
 
 rm -f /tmp/*.sh
 # Composer
+
+# Symfony
+cp -f ${CONFS}/symfony.sh /usr/local/bin/symfony
+chmod 755 /usr/local/bin/symfony
+# Symfony
