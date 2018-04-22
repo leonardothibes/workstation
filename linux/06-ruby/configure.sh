@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " - Jekyll..."
+echo " - Ruby..."
 
 LOCK=/tmp/workstation.lock.jekyll
 [ -f ${LOCK} ] && return
