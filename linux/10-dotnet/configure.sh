@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo " - Dotnet Core..."
+VERSION=2.1.105
 
 # Repository
 curl -s https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -10,5 +11,5 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xen
 
 # Install
 apt-get update > /dev/null 2>&1
-apt-get install -y apt-transport-https dotnet-sdk-2.1.105 > /dev/null 2>&1
+apt-get install -y apt-transport-https dotnet-sdk-${VERSION} > /dev/null 2>&1
 # Install
