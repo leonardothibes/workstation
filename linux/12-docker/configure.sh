@@ -10,7 +10,7 @@ LOCK=/tmp/workstation.lock.docker
 echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
 apt-get update > /dev/null 2>&1
 
-apt-get install -y docker-ce > /dev/null 2>&1
+apt-get install -y --allow-unauthenticated docker-ce > /dev/null 2>&1
 cp -f ${CONFS}/docker.sh /etc/profile.d
 # Docker
 
