@@ -14,7 +14,7 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xen
 
 # Install
 apt-get update > /dev/null 2>&1
-apt-get install -y apt-transport-https dotnet-sdk-${VERSION} > /dev/null 2>&1
+apt-get install -y dotnet-sdk-${VERSION} > /dev/null 2>&1
 # Install
 
 > ${LOCK}
