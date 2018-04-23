@@ -24,14 +24,14 @@ else
 fi
 # SO
 
-# The magic happens
+# The magic happens here
 for DIR in $(ls ${HERE}/${SO})
 do
     SCRIPT="${HERE}/${SO}/${DIR}/configure.sh"
     chmod 755 ${SCRIPT}
     sh ${SCRIPT}
 done
-# The magic happens
+# The magic happens here
 
 echo ""
 echo " Done!"
