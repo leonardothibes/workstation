@@ -16,7 +16,7 @@ cp -f ${CONFS}/docker.sh /etc/profile.d
 
 # Docker Compose
 VERSION=1.21.0
-sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo curl -s -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 chmod 755 /usr/local/bin/docker-compose
 # Docker Compose
 
