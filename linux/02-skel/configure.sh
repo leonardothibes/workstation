@@ -17,6 +17,7 @@ rm -f /etc/skel/.bashrc /root/.bashrc
 for USER in $(ls /home)
 do
     HOME_FOLDER=/home/${USER}
+
     [ -d ${HOME_FOLDER}/tmp  ]                      || mkdir ${HOME_FOLDER}/tmp  && chown ${USER}: ${HOME_FOLDER}/tmp
     [ -d ${HOME_FOLDER}/.bin ]                      || mkdir ${HOME_FOLDER}/.bin && chown ${USER}: ${HOME_FOLDER}/.bin
     [ -d ${HOME_FOLDER}/.nvm ]                      || mkdir ${HOME_FOLDER}/.nvm && chown ${USER}: ${HOME_FOLDER}/.nvm
