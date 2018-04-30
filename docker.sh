@@ -1,8 +1,7 @@
 #!/bin/bash
-
-IMG=vcatechnology/linux-mint:latest
-USER=user
+IMG=vcatechnology/linux-mint-ci:latest
+USER=build-server
 DIR=/home/${USER}/workstation
 
 clear
-sudo docker run --rm -it -v $(pwd):${DIR} -w ${DIR} ${IMG} bash
+sudo docker run --rm -it -v $(pwd):${DIR} -w ${DIR} --user ${USER} ${IMG} bash
