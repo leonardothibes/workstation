@@ -13,4 +13,4 @@ apt-get install -y apt-transport-https \
                    git                 \
                    subversion          \
                    dialog              \
-> /dev/null
+> /dev/null 2>&1
