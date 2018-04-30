@@ -1,0 +1,8 @@
+[Nemo Action]
+Active=true
+Name=Abrir no Sublime Text
+Comment=Abrir no Sublime Text
+Exec=/usr/bin/subl "%F"
+Selection=none
+Extensions=any;
+Icon-Name=sublime-text

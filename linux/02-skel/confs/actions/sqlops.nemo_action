@@ -1,0 +1,8 @@
+[Nemo Action]
+Active=true
+Name=Abrir no SqlOps
+Comment=Abrir no SqlOps
+Exec=/usr/local/bin/sqlops "%F"
+Selection=none
+Extensions=any;
+Icon-Name=sqlops
