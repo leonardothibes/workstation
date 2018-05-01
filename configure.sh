@@ -12,6 +12,7 @@ echo ""
 # Only root
 if [ ${WHO} -ne 0 ]; then
 	echo "É necessário ter permissão de root para rodar este script"
+    echo ""
 	exit 1
 fi
 # Only root
