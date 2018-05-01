@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " - .NET..."
+echo " - C#..."
 VERSION=2.1.105
 
 LOCK=/tmp/workstation.lock.dotnet
