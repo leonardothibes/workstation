@@ -9,6 +9,8 @@ PACKAGES="
     http-server
     gulp
     uuid
+    node-cpf-cli
+    @angular/cli
 "
 
 LOCK=/tmp/workstation.lock.node
