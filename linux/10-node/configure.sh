@@ -9,7 +9,9 @@ PACKAGES="
     http-server
     gulp
     uuid
+    bower
     node-cpf-cli
+    typescript
     @angular/cli
 "
 
