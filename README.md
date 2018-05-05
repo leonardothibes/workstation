@@ -10,13 +10,13 @@ Instalation
 ```bash
 git clone git@github.com:leonardothibes/workstation.git
 cd workstation
-./configure.sh
+sudo ./configure.sh
 ```
 
 Compatibility list
 ------------------
 
- * Linux Mint 18.3
+ * Linux Mint 18.x
  * macOS 10.12.x (Sierra)
  * macOS 10.13.x (High Sierra)
 
