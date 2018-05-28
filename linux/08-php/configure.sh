@@ -36,6 +36,11 @@ $(cd /tmp ; ./composer-install.sh ; mv composer.phar /usr/local/bin/composer)
 chmod 755 /usr/local/bin/composer
 
 rm -f /tmp/*.sh
+
+for USER in $(ls /home)
+do
+    chown -R ${USER}: /home/${USER}/.composer
+done
 # Composer
 
 # Symfony
