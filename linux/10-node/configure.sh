@@ -10,6 +10,7 @@ PACKAGES="
     gulp
     uuid
     bower
+    jshint
     node-cpf-cli
     typescript
     @angular/cli
