@@ -4,4 +4,4 @@ USER=build-server
 DIR=/home/${USER}/workstation
 
 clear
-sudo docker run --rm -it -v $(pwd):${DIR} -w ${DIR} --user ${USER} ${IMG} bash
+docker run --rm -it -v $(pwd):${DIR} -w ${DIR} --user ${USER} ${IMG} bash
