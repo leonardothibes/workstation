@@ -25,7 +25,7 @@ service docker start    > /dev/null 2>&1
 # Starting docker deamon
 
 # Docker Compose
-VERSION=1.21.0 # Atualizar versão para 1.22.0
+VERSION=1.22.0
 sudo curl -s -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 chmod 755 /usr/local/bin/docker-compose
 # Docker Compose
