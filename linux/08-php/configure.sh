@@ -1,7 +1,9 @@
 #!/bin/bash
 
 echo " - PHP..."
+
 CONFS=$(dirname $0)/confs
+BINS=$(dirname $0)/bin
 
 # PHP
 apt-get install -y php7.0          \
@@ -48,3 +50,13 @@ cp -f ${CONFS}/symfony.sh /usr/local/bin/symfony
 cp -f ${CONFS}/symfony-mini.sh /usr/local/bin/symfony-mini
 chmod 755 /usr/local/bin/*
 # Symfony
+
+# MD5
+cp -f ${BINS}/md5.php /usr/local/bin/md5
+chmod 755 /usr/local/bin/md5 
+# MD5
+
+# SHA1
+cp -f ${BINS}/sha1.php /usr/local/bin/sha1
+chmod 755 /usr/local/bin/sha1 
+# SHA1
