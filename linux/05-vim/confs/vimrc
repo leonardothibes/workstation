@@ -48,6 +48,7 @@ endif
 "set mouse=a		" Enable mouse usage (all modes)
 set number
 set nowrap
+set tabstop=4
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
