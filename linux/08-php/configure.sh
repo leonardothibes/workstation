@@ -26,6 +26,7 @@ apt-get install -y php7.0          \
 
 cp -f ${CONFS}/php.ini /etc/php/7.0/cli
 cp -f ${CONFS}/xdebug.ini /etc/php/7.0/mods-available
+cp -f ${CONFS}/freetds.conf /etc/freetds/freetds.conf
 
 ln -sf /etc/php/7.0/cli/php.ini /etc/php.ini
 # PHP
@@ -53,10 +54,10 @@ chmod 755 /usr/local/bin/*
 
 # MD5
 cp -f ${BINS}/md5.php /usr/local/bin/md5
-chmod 755 /usr/local/bin/md5 
+chmod 755 /usr/local/bin/md5
 # MD5
 
 # SHA1
 cp -f ${BINS}/sha1.php /usr/local/bin/sha1
-chmod 755 /usr/local/bin/sha1 
+chmod 755 /usr/local/bin/sha1
 # SHA1
