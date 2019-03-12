@@ -6,6 +6,7 @@ CONFS=$(dirname $0)/confs
 VERSION=8.11.1
 PACKAGES="
     npm-check-updates
+    browser-sync
     http-server
     gulp
     uuid
@@ -33,5 +34,4 @@ do
 done;
 
 cp -f ${CONFS}/nvm.sh /etc/profile.d
-
 > ${LOCK}
