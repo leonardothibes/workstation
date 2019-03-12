@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " - Git..."
+echo " - GIT..."
 CONFS=$(dirname $0)/confs
 
 LOCK=/tmp/workstation.lock.git
