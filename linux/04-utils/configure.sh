@@ -7,6 +7,7 @@ apt-get install -y apt-transport-https \
                    wget                \
                    curl                \
                    nmap                \
+                   nscd                \
                    tcpdump             \
                    sysv-rc-conf        \
                    build-essential     \
