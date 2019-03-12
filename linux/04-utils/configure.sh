@@ -11,7 +11,6 @@ apt-get install -y apt-transport-https \
                    tcpdump             \
                    sysv-rc-conf        \
                    build-essential     \
-                   subversion          \
                    dialog              \
                    xclip               \
 > /dev/null 2>&1
