@@ -13,4 +13,5 @@ apt-get install -y apt-transport-https \
                    git                 \
                    subversion          \
                    dialog              \
+                   xclip               \
 > /dev/null 2>&1
