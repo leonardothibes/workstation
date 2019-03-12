@@ -13,6 +13,9 @@ PACKAGES="
     jshint
     node-cpf-cli
     typescript
+    nodemon
+    ts-node
+    ts-node-dev
     @angular/cli
 "
 
