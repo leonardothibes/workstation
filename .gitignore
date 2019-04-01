@@ -7,5 +7,6 @@ Thumbs.db
 .idea
 *.db
 *.bak
+*.bkp
 *.swp
 *.log
