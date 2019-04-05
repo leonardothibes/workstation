@@ -5,4 +5,4 @@ Comment=Abrir no VsCode
 Exec=/usr/bin/code "%F"
 Selection=none
 Extensions=any;
-Icon-Name=code
+Icon-Name=com.visualstudio.code
