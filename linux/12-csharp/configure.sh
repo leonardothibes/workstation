@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo " - C#..."
-VERSION=2.1.105
+VERSION=3.1
 
 LOCK=/tmp/workstation.lock.dotnet
 [ -f ${LOCK} ] && return
