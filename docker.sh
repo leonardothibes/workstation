@@ -1,6 +1,6 @@
 #!/bin/bash
-IMG=vcatechnology/linux-mint-ci:latest
-USER=build-server
+IMG=linuxmintd/mint19.3-amd64
+USER=root
 DIR=/home/${USER}/workstation
 
 clear
