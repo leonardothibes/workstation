@@ -9,7 +9,6 @@ apt-get install -y apt-transport-https \
                    nmap                \
                    nscd                \
                    tcpdump             \
-                   sysv-rc-conf        \
                    build-essential     \
                    dialog              \
                    xclip               \
