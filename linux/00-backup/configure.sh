@@ -3,7 +3,7 @@
 echo " - Config files backup..."
 BKPDIR=/root/bkp-confs
 
-[ -d ${BKPDIR}/etc ]              || mkdir -p ${BKPDIR}/etc/etc
+[ -d ${BKPDIR}/etc ]              || mkdir -p ${BKPDIR}/etc
 [ -f ${BKPDIR}/etc/hosts ]        || cp /etc/hosts ${BKPDIR}/etc
 [ -f ${BKPDIR}/etc/fstab ]        || cp /etc/fstab ${BKPDIR}/etc
 [ -f ${BKPDIR}/etc/adduser.conf ] || cp /etc/adduser.conf ${BKPDIR}/etc
