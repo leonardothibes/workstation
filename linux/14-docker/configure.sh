@@ -7,11 +7,10 @@ LOCK=/tmp/workstation.lock.docker
 [ -f ${LOCK} ] && return
 
 # Docker
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - > /dev/null 2>&1
-
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -   > /dev/null 2>&1
 echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
-apt-get update > /dev/null 2>&1
 
+apt-get update > /dev/null 2>&1
 apt-get install -y             \
     software-properties-common \
     apt-transport-https        \
