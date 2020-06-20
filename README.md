@@ -17,8 +17,7 @@ Compatibility list
 ------------------
 
  * Linux Mint 18.x
- * macOS 10.12.x (Sierra)
- * macOS 10.13.x (High Sierra)
+ * Linux Mint 19.x
 
 Author
 ------
