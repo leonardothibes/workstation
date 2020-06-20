@@ -12,4 +12,5 @@ apt-get install -y apt-transport-https \
                    build-essential     \
                    dialog              \
                    xclip               \
+                   unzip               \
 > /dev/null 2>&1
