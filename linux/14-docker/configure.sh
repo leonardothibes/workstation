@@ -7,9 +7,20 @@ LOCK=/tmp/workstation.lock.docker
 [ -f ${LOCK} ] && return
 
 # Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - > /dev/null 2>&1
+
 echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
 apt-get update > /dev/null 2>&1
-apt-get install -y --allow-unauthenticated docker-ce > /dev/null 2>&1
+
+apt-get install -y             \
+    software-properties-common \
+    apt-transport-https        \
+    ca-certificates            \
+    gnupg-agent                \
+    docker-ce                  \
+    docker-ce-cli              \
+    containerd.io              \
+> /dev/null 2>&1
 # Docker
 
 # Docker lock file
@@ -25,7 +36,7 @@ service docker start    > /dev/null 2>&1
 # Starting docker deamon
 
 # Docker Compose
-VERSION=1.22.0
+VERSION=1.26.0
 sudo curl -s -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 chmod 755 /usr/local/bin/docker-compose
 # Docker Compose
