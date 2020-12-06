@@ -3,14 +3,15 @@
 echo " - Generic utilities..."
 
 apt-get install -y apt-utils > /dev/null 2>&1
-apt-get install -y apt-transport-https \
-                   wget                \
-                   curl                \
-                   nmap                \
-                   nscd                \
-                   tcpdump             \
-                   build-essential     \
-                   dialog              \
-                   xclip               \
-                   unzip               \
+apt-get install -y apt-transport-https   \
+                   wget                  \
+                   curl                  \
+                   nmap                  \
+                   nscd                  \
+                   tcpdump               \
+                   build-essential       \
+                   dialog                \
+                   xclip                 \
+                   unzip                 \
+                   mysql-client-core-5.7 \
 > /dev/null 2>&1
