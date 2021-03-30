@@ -6,6 +6,7 @@ CONFS=$(dirname $0)/confs
 VERSION=12.18.1
 PACKAGES="
     npm-check-updates
+    yarn
     browser-sync
     http-server
     gulp
