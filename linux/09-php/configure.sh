@@ -5,14 +5,12 @@ echo " - PHP..."
 export DEBIAN_FRONTEND=noninteractive
 CONFS=$(dirname $0)/confs
 BINS=$(dirname $0)/bin
-VERSION=7.2
+VERSION=7.4
 
 # PHP
 apt-get install -y php${VERSION}          \
-                   php${VERSION}-cli      \
                    php${VERSION}-curl     \
                    php${VERSION}-gd       \
-                   php${VERSION}-json     \
                    php${VERSION}-ldap     \
                    php${VERSION}-mbstring \
                    php${VERSION}-mysql    \
