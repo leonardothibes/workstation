@@ -9,9 +9,9 @@ apt-get install -y apt-transport-https   \
                    nmap                  \
                    nscd                  \
                    tcpdump               \
-                   build-essential       \
                    dialog                \
                    xclip                 \
                    unzip                 \
+                   build-essential       \
                    mysql-client-core-5.7 \
 > /dev/null 2>&1
