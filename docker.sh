@@ -1,5 +1,5 @@
 #!/bin/bash
-IMG=linuxmintd/mint19.3-amd64
+IMG=linuxmintd/mint20.1-amd64
 USER=root
 DIR=/${USER}/workstation
 
