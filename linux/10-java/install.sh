@@ -3,9 +3,9 @@
 echo " - Java..."
 CONFS=$(dirname $0)/confs
 
-VERSION=jre1.8.0_251
+VERSION=jre1.8.0_281
 INSTALL=/usr/local/java
-FILE=jre-8u251-linux-x64.tar.gz
+FILE=jre-8u281-linux-x64.tar.gz
 BIN=/usr/local/bin/java
 
 LOCK=/tmp/workstation.lock.java
