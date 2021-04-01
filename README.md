@@ -10,14 +10,13 @@ Instalation
 ```bash
 git clone git@github.com:leonardothibes/workstation.git
 cd workstation
-sudo ./configure.sh
+sudo ./install.sh
 ```
 
 Compatibility list
 ------------------
 
- * Linux Mint 18.x
- * Linux Mint 19.x
+ * Linux Mint 20.x
 
 Author
 ------
@@ -27,7 +26,7 @@ Author
 LICENSE
 =======
 
-Copyright (c) 2018 Leonardo Thibes
+Copyright (c) 2018-2021 Leonardo Thibes
 
 The MIT License
 
