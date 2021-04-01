@@ -28,7 +28,7 @@ fi
 # The magic happens here
 for DIR in $(ls ${HERE}/${SO})
 do
-    SCRIPT="${HERE}/${SO}/${DIR}/configure.sh"
+    SCRIPT="${HERE}/${SO}/${DIR}/install.sh"
     chmod 755 ${SCRIPT}
     sh ${SCRIPT}
 done
