@@ -3,12 +3,13 @@
 echo " - Node.js..."
 CONFS=$(dirname $0)/confs
 
-VERSION=12.18.1
+VERSION=14.16.0
 PACKAGES="
     npm-check-updates
     yarn
     browser-sync
     http-server
+    json-server
     gulp
     uuid
     jshint
