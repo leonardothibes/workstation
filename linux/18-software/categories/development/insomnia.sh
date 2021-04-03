@@ -6,7 +6,7 @@ URL="https://github-releases.githubusercontent.com/56899284/61500500-90d5-11eb-8
 TMP=/tmp
 
 LOCK=/tmp/workstation.lock.insomnia
-# [ -f ${LOCK} ] && return
+[ -f ${LOCK} ] && return
 
 apt-get install -y libappindicator3-1 > /dev/null 2>&1
 
