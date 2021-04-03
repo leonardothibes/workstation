@@ -13,6 +13,7 @@ apt-get install -y apt-transport-https       \
                    dialog                    \
                    xclip                     \
                    unzip                     \
+                   snapd                     \
                    build-essential           \
                    mariadb-client-core-10.3  \
 > /dev/null 2>&1
