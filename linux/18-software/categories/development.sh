@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# From repository
 echo "   - Development..."
 
+# From repository
 apt-get install -y sqlitebrowser   \
                    gitg            \
                    meld            \
