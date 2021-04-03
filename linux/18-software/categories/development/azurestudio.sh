@@ -2,11 +2,11 @@
 
 echo "       - Azure Data Studio..."
 
-LOCK=/tmp/workstation.lock.azurestudio
-[ -f ${LOCK} ] && return
-
 URL="https://sqlopsbuilds.azureedge.net/stable/765c7064d46253d88393e0e1ff78874b6fe8fa64/azuredatastudio-linux-1.27.0.deb"
 TMP=/tmp
+
+LOCK=/tmp/workstation.lock.azurestudio
+[ -f ${LOCK} ] && return
 
 apt-get install -y libxss1      \
                    libgconf-2-4 \
