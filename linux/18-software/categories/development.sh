@@ -6,8 +6,6 @@ echo "   - Development..."
 apt-get install -y sqlitebrowser   \
                    gitg            \
                    meld            \
-                   glade           \
-                   libglade2-0     \
                    sublime-text    \
 > /dev/null 2>&1
 # From repository
