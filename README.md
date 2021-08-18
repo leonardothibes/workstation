@@ -18,6 +18,17 @@ Compatibility list
 
  * Linux Mint 20.x
 
+Manual installations
+--------------------
+
+**Shutter**
+
+```bash
+sudo add-apt-repository ppa:shutter/ppa
+sudo apt update
+sudo apt install shutter
+```
+
 Author
 ------
 
