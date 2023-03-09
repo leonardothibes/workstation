@@ -11,7 +11,6 @@ apt-get install -y apt-transport-https       \
                    nscd                      \
                    tcpdump                   \
                    dialog                    \
-                   xclip                     \
                    unzip                     \
                    snapd                     \
                    build-essential           \

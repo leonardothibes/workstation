@@ -2,4 +2,4 @@
 
 echo " - Python..."
 
-apt-get install -y python > /dev/null
+apt-get install -y python3 > /dev/null
