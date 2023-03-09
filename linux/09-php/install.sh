@@ -20,7 +20,8 @@ apt-get install -y php${VERSION}          \
                    php${VERSION}-intl     \
                    php${VERSION}-xml      \
                    php${VERSION}-dev      \
-                   php-xdebug
+                   php-xdebug             \
+> /dev/null 2>&1
 
 cp -f ${CONFS}/php.ini /etc/php/${VERSION}/cli
 cp -f ${CONFS}/xdebug.ini /etc/php/${VERSION}/mods-available
@@ -29,15 +30,15 @@ cp -f ${CONFS}/freetds.conf /etc/freetds/freetds.conf
 ln -sf /etc/php/${VERSION}/cli/php.ini /etc/php.ini
 # PHP
 
-# Composer
-# cp -f ${CONFS}/composer-install.sh /tmp
-# chmod 755 /tmp/*.sh
+# COMPOSER
+cp -f ${CONFS}/composer-install.sh /tmp
+chmod 755 /tmp/*.sh
 
-# $(cd /tmp ; ./composer-install.sh ; mv composer.phar /usr/local/bin/composer)
-# chmod 755 /usr/local/bin/composer
+$(cd /tmp ; ./composer-install.sh ; mv composer.phar /usr/local/bin/composer)
+chmod 755 /usr/local/bin/composer
 
-# rm -f /tmp/*.sh
-# Composer
+rm -f /tmp/*.sh
+# COMPOSER
 
 # MD5
 cp -f ${BINS}/md5.php /usr/local/bin/md5
