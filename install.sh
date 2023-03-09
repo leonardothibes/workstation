@@ -31,7 +31,10 @@ sh ${HERE}/${SO}/02-skel/install.sh
 sh ${HERE}/${SO}/03-updates/install.sh
 sh ${HERE}/${SO}/04-utils/install.sh
 sh ${HERE}/${SO}/05-sysctl/install.sh
-# sh ${HERE}/${SO}/06-vim/install.sh
+sh ${HERE}/${SO}/06-vim/install.sh
+sh ${HERE}/${SO}/07-ruby/install.sh
+sh ${HERE}/${SO}/08-python/install.sh
+sh ${HERE}/${SO}/09-php/install.sh
 exit 0
 
 # The magic happens here
