@@ -5,7 +5,7 @@ echo " - PHP..."
 export DEBIAN_FRONTEND=noninteractive
 CONFS=$(dirname $0)/confs
 BINS=$(dirname $0)/bin
-VERSION=7.4
+VERSION=8.1
 
 # PHP
 apt-get install -y php${VERSION}          \
