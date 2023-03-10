@@ -2,7 +2,9 @@
 
 echo "       - Postman..."
 
-DIR=$(dirname $0)/files/postman
-ln -sf /usr/local/postman/Postman /usr/local/bin/postman
-cp -f ${DIR}/postman.png          /usr/share/pixmaps
-cp -f ${DIR}/postman.desktop      /usr/share/applications
+LOCK=/tmp/workstation.lock.development.postman
+[ -f ${LOCK} ] && return
+
+flatpak install -y --noninteractive flathub com.getpostman.Postman > /dev/null 2>&1
+
+> ${LOCK}
