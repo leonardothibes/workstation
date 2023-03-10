@@ -2,6 +2,9 @@
 
 echo "   - Development..."
 
+LOCK=/tmp/workstation.lock.development
+[ -f ${LOCK} ] && return
+
 # From repository
 apt-get install -y sqlitebrowser   \
                    gitg            \
@@ -20,3 +23,5 @@ do
     sh ${DEVELOPMENT}/${SOFTWARE}
 done
 # Other sources
+
+> ${LOCK}
