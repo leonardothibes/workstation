@@ -17,18 +17,10 @@ if [ ${WHO} -ne 0 ]; then
 fi
 # Only root
 
-# SO
-if [ ${SO} == "Darwin" ]; then
-    SO="mac"
-else
-    SO="linux"
-fi
-# SO
-
 # The magic happens here
-for DIR in $(ls ${HERE}/${SO})
+for DIR in $(ls ${HERE}/scripts)
 do
-    SCRIPT="${HERE}/${SO}/${DIR}/install.sh"
+    SCRIPT="${HERE}/scripts/${DIR}/install.sh"
     chmod 755 ${SCRIPT}
     sh ${SCRIPT}
 done

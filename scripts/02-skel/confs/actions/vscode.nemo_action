@@ -1,0 +1,8 @@
+[Nemo Action]
+Active=true
+Name=Abrir no VsCode
+Comment=Abrir no VsCode
+Exec=/usr/bin/code "%F"
+Selection=none
+Extensions=any;
+Icon-Name=com.visualstudio.code

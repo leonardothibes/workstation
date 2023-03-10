@@ -1,0 +1,8 @@
+[Nemo Action]
+Active=true
+Name=Abrir no GitG
+Comment=Abrir no GitG
+Exec=/usr/bin/gitg "%F"
+Selection=none
+Extensions=any;
+Icon-Name=gitg
