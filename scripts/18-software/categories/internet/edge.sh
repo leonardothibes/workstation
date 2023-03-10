@@ -2,6 +2,9 @@
 
 echo "       - Microsoft Edge..."
 
+LOCK=/tmp/workstation.lock.internet.edge
+[ -f ${LOCK} ] && return
+
 APT="/etc/apt/sources.list.d/microsoft-edge.list"
 echo "deb [arch=amd64] http://packages.microsoft.com/repos/edge/ stable main" > ${APT}
 
@@ -11,3 +14,5 @@ rm -f microsoft.gpg
 
 apt-get update                           > /dev/null 2>&1
 apt-get install -y microsoft-edge-stable > /dev/null 2>&1
+
+> ${LOCK}
