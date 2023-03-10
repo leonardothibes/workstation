@@ -13,7 +13,6 @@ apt-get install -y skypeforlinux      \
                    remmina            \
                    remmina-plugin-vnc \
                    remmina-plugin-rdp \
-                   slack              \
 > /dev/null 2>&1
 # From repository
 
