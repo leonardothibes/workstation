@@ -13,6 +13,11 @@ apt-get install -y sqlitebrowser   \
 > /dev/null 2>&1
 # From repository
 
+# From Flathub
+flatpak install -y --noninteractive flathub rest.insomnia.Insomnia > /dev/null 2>&1
+flatpak install -y --noninteractive flathub com.getpostman.Postman > /dev/null 2>&1
+# From Flathub
+
 # Other sources
 echo "     - 3rd party..."
 
