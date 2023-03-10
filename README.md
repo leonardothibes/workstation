@@ -1,6 +1,6 @@
 # Workstation
 
-My personal scripts to configure my workstation.
+My personal scripts to configure my Linux workstation.
 
 Feel free to use or modify for your own purposes.
 
@@ -16,7 +16,7 @@ sudo ./install.sh
 Compatibility list
 ------------------
 
- * Linux Mint 20.x
+ * Linux Mint 21.1
 
 Manual installations
 --------------------
@@ -37,7 +37,7 @@ Author
 LICENSE
 =======
 
-Copyright (c) 2018-2021 Leonardo Thibes
+Copyright (c) 2018-2023 Leonardo Thibes
 
 The MIT License
 
