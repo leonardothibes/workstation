@@ -17,6 +17,9 @@ if [ ${WHO} -ne 0 ]; then
 fi
 # Only root
 
+./scripts/11-node/install.sh
+exit 0
+
 # The magic happens here
 for DIR in $(ls ${HERE}/scripts)
 do
