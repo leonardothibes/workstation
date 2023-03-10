@@ -24,15 +24,15 @@ apt-get install -y php${VERSION}          \
                    php${VERSION}-intl     \
                    php${VERSION}-xml      \
                    php${VERSION}-dev      \
-                   php-xdebug             
-#                    \
-# > /dev/null 2>&1
+                   php-xdebug             \
+> /dev/null 2>&1
 
-# cp -f ${CONFS}/php.ini /etc/php/${VERSION}/cli
+cp -f ${CONFS}/php.ini /etc/php/${VERSION}/cli
 cp -f ${CONFS}/xdebug.ini /etc/php/${VERSION}/mods-available
 cp -f ${CONFS}/freetds.conf /etc/freetds/freetds.conf
 
 ln -sf /etc/php/${VERSION}/cli/php.ini /etc/php.ini
+ln -sf /usr/bin/php${VERSION} /etc/alternatives/php
 # PHP
 
 # COMPOSER
