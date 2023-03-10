@@ -2,10 +2,17 @@
 
 echo "       - Team Viewer..."
 
-LOCK=/tmp/workstation.lock.internet.teamviewer
-# [ -f ${LOCK} ] && return
+FILES=$(dirname $0)/files
+APT=/etc/apt/sources.list.d/teamviewer.list
+KEY=/usr/share/keyrings/teamviewer-keyring.gpg
 
-curl -sL https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | gpg --dearmor | sudo apt-key add - > /dev/null 2>&1
-echo "deb [signed-by=/usr/share/keyrings/teamviewer-keyring.gpg] https://linux.teamviewer.com/deb stable main" > /etc/apt/sources.list.d/teamviewer.list
+LOCK=/tmp/workstation.lock.internet.teamviewer
+[ -f ${LOCK} ] && return
+
+# cp -f ${FILES}/teamviewer-keyring.gpg /usr/share/keyrings
+# echo "deb [signed-by=${KEY}] https://linux.teamviewer.com/deb stable main" > ${APT}
+
+# apt-get update                
+# apt-get install -y teamviewer 
 
 > ${LOCK}
