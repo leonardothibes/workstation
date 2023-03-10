@@ -16,6 +16,13 @@ apt-get install -y skypeforlinux      \
 > /dev/null 2>&1
 # From repository
 
+# From Flathub
+flatpak install -y --noninteractive flathub com.github.IsmaelMartinez.teams_for_linux > /dev/null 2>&1
+flatpak install -y --noninteractive flathub io.github.mimbrero.WhatsAppDesktop        > /dev/null 2>&1
+flatpak install -y --noninteractive flathub com.slack.Slack                           > /dev/null 2>&1
+flatpak install -y --noninteractive flathub eu.ithz.umftpd                            > /dev/null 2>&1
+# From Flathub
+
 # Other sources
 echo "     - 3rd party..."
 
