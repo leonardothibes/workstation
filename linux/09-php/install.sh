@@ -30,16 +30,6 @@ cp -f ${CONFS}/freetds.conf /etc/freetds/freetds.conf
 ln -sf /etc/php/${VERSION}/cli/php.ini /etc/php.ini
 # PHP
 
-# COMPOSER
-cp -f ${CONFS}/composer-install.sh /tmp
-chmod 755 /tmp/*.sh
-
-$(cd /tmp ; ./composer-install.sh ; mv composer.phar /usr/local/bin/composer)
-chmod 755 /usr/local/bin/composer
-
-rm -f /tmp/*.sh
-# COMPOSER
-
 # MD5
 cp -f ${BINS}/md5.php /usr/local/bin/md5
 chmod 755 /usr/local/bin/md5
