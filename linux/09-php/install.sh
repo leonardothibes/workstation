@@ -5,9 +5,10 @@ echo " - PHP..."
 export DEBIAN_FRONTEND=noninteractive
 CONFS=$(dirname $0)/confs
 BINS=$(dirname $0)/bin
-VERSION=8.1
+VERSION=7.4
 
 # PHP
+sudo add-apt-repository ppa:ondrej/php
 apt-get install -y php${VERSION}          \
                    php${VERSION}-curl     \
                    php${VERSION}-gd       \
@@ -23,7 +24,7 @@ apt-get install -y php${VERSION}          \
                    php-xdebug             \
 > /dev/null 2>&1
 
-cp -f ${CONFS}/php.ini /etc/php/${VERSION}/cli
+# cp -f ${CONFS}/php.ini /etc/php/${VERSION}/cli
 cp -f ${CONFS}/xdebug.ini /etc/php/${VERSION}/mods-available
 cp -f ${CONFS}/freetds.conf /etc/freetds/freetds.conf
 
