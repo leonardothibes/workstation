@@ -24,7 +24,7 @@ apt-get install -y php${VERSION}          \
                    php${VERSION}-intl     \
                    php${VERSION}-xml      \
                    php${VERSION}-dev      \
-                   php-xdebug             \
+                   php-${VERSION}xdebug   \
 > /dev/null 2>&1
 
 cp -f ${CONFS}/php.ini /etc/php/${VERSION}/cli
