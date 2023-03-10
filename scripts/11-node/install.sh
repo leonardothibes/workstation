@@ -18,7 +18,7 @@ LOCK=/tmp/workstation.lock.node
 
 for USER in $(ls /home)
 do
-    su - ${USER} -c "cd ${CONFS} ; sh ./install.sh > /dev/null 2>&1"
+    su - ${USER} -c "sh ${CONFS}/install.sh > /dev/null 2>&1"
     su - ${USER} -c "nvm install ${VERSION} > /dev/null 2>&1"
     for PACKAGE in ${PACKAGES}
     do
@@ -26,7 +26,7 @@ do
     done;
 done;
 
-su - root -c "cd ${CONFS} ; sh ./install.sh > /dev/null 2>&1"
+su - root -c "sh ${CONFS}/install.sh > /dev/null 2>&1"
 su - root -c "nvm install ${VERSION} > /dev/null 2>&1"
 for PACKAGE in ${PACKAGES}
 do
