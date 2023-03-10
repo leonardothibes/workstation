@@ -8,10 +8,12 @@ LOCK=/tmp/workstation.lock.internet
 # From repository
 apt-get install -y skypeforlinux      \
                    filezilla          \
-                   slack              \
+                   transmission       \
+                   chromium-browser   \
                    remmina            \
                    remmina-plugin-vnc \
                    remmina-plugin-rdp \
+                   slack              \
 > /dev/null 2>&1
 # From repository
 
