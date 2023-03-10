@@ -18,19 +18,19 @@ LOCK=/tmp/workstation.lock.node
 
 for USER in $(ls /home)
 do
-    su - ${USER} -c "wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash"
-    su - ${USER} -c "nvm install ${VERSION}"
+    su - ${USER} -c "wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash > /dev/null 2>&1"
+    su - ${USER} -c "nvm install ${VERSION} > /dev/null 2>&1"
     for PACKAGE in ${PACKAGES}
     do
-        su - ${USER} -c "npm install --ignore-scripts -g ${PACKAGE}"
+        su - ${USER} -c "npm install --ignore-scripts -g ${PACKAGE} > /dev/null 2>&1"
     done;
 done;
 
-su - root -c "wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash"
-su - root -c "nvm install ${VERSION}"
+su - root -c "wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash > /dev/null 2>&1"
+su - root -c "nvm install ${VERSION} > /dev/null 2>&1"
 for PACKAGE in ${PACKAGES}
 do
-    su - root -c "npm install --ignore-scripts -g ${PACKAGE}"
+    su - root -c "npm install --ignore-scripts -g ${PACKAGE} > /dev/null 2>&1"
 done;
 
 cp -f ${CONFS}/nvm.sh /etc/profile.d
