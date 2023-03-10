@@ -7,6 +7,9 @@ CONFS=$(dirname $0)/confs
 BINS=$(dirname $0)/bin
 VERSION=7.4
 
+LOCK=/tmp/workstation.lock.php
+[ -f ${LOCK} ] && return
+
 # PHP
 apt-get install -y software-properties-common > /dev/null 2>&1
 add-apt-repository -y ppa:ondrej/php > /dev/null 2>&1
@@ -49,3 +52,5 @@ chmod 755 /usr/local/bin/md5
 cp -f ${BINS}/sha1.php /usr/local/bin/sha1
 chmod 755 /usr/local/bin/sha1
 # SHA1
+
+> ${LOCK}

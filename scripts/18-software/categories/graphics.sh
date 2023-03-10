@@ -2,6 +2,9 @@
 
 echo "   - Graphics..."
 
+LOCK=/tmp/workstation.lock.graphics
+[ -f ${LOCK} ] && return
+
 # From repository
 apt-get install -y gimp     \
                    inkscape \
@@ -19,3 +22,5 @@ do
     sh ${GRAPHICS}/${SOFTWARE}
 done
 # Other sources
+
+> ${LOCK}
