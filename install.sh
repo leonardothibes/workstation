@@ -6,7 +6,7 @@ HERE=$(dirname $0)
 
 clear
 
-echo " My Linux Workstation Config ;-)"
+echo " My Linux Workstation Config :-)"
 echo ""
 
 # Only root

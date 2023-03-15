@@ -7,8 +7,8 @@ LOCK=/tmp/workstation.lock.multimedia
 
 # From repository
 apt-get install -y audacity       \
-                   handbrake      \
                    kazam          \
+                   handbrake      \
                    kdenlive       \
                    spotify-client \
 > /dev/null 2>&1
