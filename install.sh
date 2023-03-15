@@ -32,7 +32,11 @@ sh ./scripts/11-node/install.sh
 sh ./scripts/12-dotnet/install.sh
 sh ./scripts/13-ngrok/install.sh
 sh ./scripts/14-docker/install.sh
-sh ./scripts/15-multipass/install.sh
+sh ./scripts/15-snap/install.sh
+sh ./scripts/16-multipass/install.sh
+sh ./scripts/17-git/install.sh
+sh ./scripts/18-svn/install.sh
+sh ./scripts/19-zsh/install.sh
 exit 0
 
 # The magic happens here
