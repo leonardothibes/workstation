@@ -17,6 +17,12 @@ if [ ${WHO} -ne 0 ]; then
 fi
 # Only root
 
+sh ./scripts/00-backup/install.sh
+sh ./scripts/01-bash/install.sh
+sh ./scripts/03-updates/install.sh
+sh ./scripts/04-utils/install.sh
+exit 0
+
 # The magic happens here
 for DIR in $(ls ${HERE}/scripts)
 do
