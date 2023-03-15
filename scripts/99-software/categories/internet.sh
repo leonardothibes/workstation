@@ -3,7 +3,7 @@
 echo "   - Internet..."
 
 LOCK=/tmp/workstation.lock.internet
-# [ -f ${LOCK} ] && return
+[ -f ${LOCK} ] && return
 
 # From repository
 apt-get install -y skypeforlinux      \
