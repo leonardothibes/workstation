@@ -26,6 +26,8 @@ sh ./scripts/06-vim/install.sh
 sh ./scripts/07-ruby/install.sh
 sh ./scripts/08-python/install.sh
 sh ./scripts/09-php/install.sh
+sh ./scripts/10-java/install.sh
+sh ./scripts/11-node/install.sh
 exit 0
 
 # The magic happens here
