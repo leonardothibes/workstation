@@ -26,11 +26,11 @@ DEVELOPMENT=$(dirname $0)/development
 sh ${DEVELOPMENT}/azurestudio.sh
 sh ${DEVELOPMENT}/mysql-workbench.sh
 
-# for SOFTWARE in $(ls ${DEVELOPMENT})
-# do
-#     chmod 755 ${DEVELOPMENT}/${SOFTWARE}
-#     sh ${DEVELOPMENT}/${SOFTWARE}
-# done
+for SOFTWARE in $(ls ${DEVELOPMENT})
+do
+    chmod 755 ${DEVELOPMENT}/${SOFTWARE}
+    sh ${DEVELOPMENT}/${SOFTWARE}
+done
 # Other sources
 
 > ${LOCK}
