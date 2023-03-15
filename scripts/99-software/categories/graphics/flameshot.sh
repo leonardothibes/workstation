@@ -2,4 +2,10 @@
 
 echo "       - Flameshot..."
 
-dpkg -i $(dirname $0)/files/flameshot.deb > /dev/null 2>&1
+LOCK=/tmp/workstation.lock.flameshot
+[ -f ${LOCK} ] && return
+
+# From Flathub
+flatpak install -y --noninteractive flathub org.flameshot.Flameshot > /dev/null 2>&1
+
+> ${LOCK}
