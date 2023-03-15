@@ -2,6 +2,9 @@
 
 echo " - Generic utilities..."
 
+LOCK=/tmp/workstation.lock.utilities
+[ -f ${LOCK} ] && return
+
 apt-get install -y apt-utils > /dev/null 2>&1
 apt-get install -y apt-transport-https       \
                    lsb-release               \
@@ -15,3 +18,5 @@ apt-get install -y apt-transport-https       \
                    build-essential           \
                    mysql-client              \
 > /dev/null 2>&1
+
+> ${LOCK}
