@@ -3,6 +3,9 @@
 echo " - ZSH..."
 CONFS=$(dirname $0)/confs
 
+LOCK=/tmp/workstation.lock.zsh
+[ -f ${LOCK} ] && return
+
 apt-get install -y zsh fonts-powerline > /dev/null 2>&1
 
 rm -Rf /etc/skel/.oh-my-zsh
@@ -21,3 +24,5 @@ do
 
     chown -R ${USER}: ${HOME_FOLDER}/.oh-my-zsh
 done;
+
+> ${LOCK}
