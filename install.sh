@@ -6,12 +6,12 @@ HERE=$(dirname $0)
 
 clear
 
-echo " My Linux Workstation Config :-)"
+echo " My Linux Workstation Config"
 echo ""
 
 # Only root
 if [ ${WHO} -ne 0 ]; then
-	echo "É necessário ter permissão de root para rodar este script"
+	echo "Should be root!"
     echo ""
 	exit 1
 fi
@@ -21,6 +21,11 @@ sh ./scripts/00-backup/install.sh
 sh ./scripts/01-bash/install.sh
 sh ./scripts/03-updates/install.sh
 sh ./scripts/04-utils/install.sh
+sh ./scripts/05-sysctl/install.sh
+sh ./scripts/06-vim/install.sh
+sh ./scripts/07-ruby/install.sh
+sh ./scripts/08-python/install.sh
+sh ./scripts/09-php/install.sh
 exit 0
 
 # The magic happens here
