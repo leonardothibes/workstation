@@ -12,7 +12,6 @@ apt-get install -y apt-transport-https       \
                    tcpdump                   \
                    dialog                    \
                    unzip                     \
-                   snapd                     \
                    build-essential           \
-                   mariadb-client-core-10.3  \
+                   mysql-client              \
 > /dev/null 2>&1
