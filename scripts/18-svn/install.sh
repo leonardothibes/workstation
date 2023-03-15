@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " - SVN..."
+echo " - Subversion..."
 CONFS=$(dirname $0)/confs
 
 URL="https://raw.githubusercontent.com/leonardothibes/svn-plus/master/svn-plus.sh"
