@@ -2,7 +2,7 @@
 
 echo "       - Redis Desktop Manager..."
 
-VERSION=1.4.2
+VERSION=1.5.9
 DIR=/usr/local/rdm
 FILES=$(dirname $0)/files/rdm
 
