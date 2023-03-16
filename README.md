@@ -21,13 +21,22 @@ Compatibility list
 Manual installations
 --------------------
 
-**Shutter**
-
 ```bash
-sudo add-apt-repository ppa:shutter/ppa
-sudo apt update
-sudo apt install shutter
+apt-get install -y audacity       \
+                   kazam          \
+                   handbrake      \
+                   kdenlive       \
+                   spotify-client
 ```
+
+Future instalations
+-------------------
+
+ * https://flathub.org/apps/details/com.github.marktext.marktext
+ * https://flathub.org/apps/details/net.codeindustry.MasterPDFEditor
+ * https://flathub.org/apps/details/com.notesnook.Notesnook
+ * https://flathub.org/apps/details/com.ticktick.TickTick
+ * https://flathub.org/apps/details/com.wps.Office
 
 Author
 ------
