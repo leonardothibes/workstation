@@ -11,6 +11,7 @@ flatpak install -y --noninteractive flathub com.ticktick.TickTick            > /
 flatpak install -y --noninteractive flathub com.notesnook.Notesnook          > /dev/null 2>&1
 flatpak install -y --noninteractive flathub net.codeindustry.MasterPDFEditor > /dev/null 2>&1
 flatpak install -y --noninteractive flathub com.github.marktext.marktext     > /dev/null 2>&1
+flatpak install -y --noninteractive flathub net.daase.journable              > /dev/null 2>&1
 # From Flathub
 
 > ${LOCK}
