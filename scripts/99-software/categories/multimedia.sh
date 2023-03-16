@@ -13,6 +13,6 @@ LOCK=/tmp/workstation.lock.multimedia
 #                    spotify-client \
 # > /dev/null 2>&1
 
-apt-get install -y spotify-client > /dev/null 2>&1
+# apt-get install -y spotify-client > /dev/null 2>&1
 
 > ${LOCK}
