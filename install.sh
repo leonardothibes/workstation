@@ -6,12 +6,12 @@ HERE=$(dirname $0)
 
 clear
 
-echo " Workstation Config"
+echo " My Linux Workstation Config"
 echo ""
 
 # Only root
 if [ ${WHO} -ne 0 ]; then
-	echo "É necessário ter permissão de root para rodar este script"
+	echo "Should be root!"
     echo ""
 	exit 1
 fi
