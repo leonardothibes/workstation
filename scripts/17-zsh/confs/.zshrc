@@ -100,4 +100,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-GIT_EDITOR=vim
+export GIT_EDITOR=vim
