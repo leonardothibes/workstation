@@ -3,7 +3,7 @@
 echo " - Node.js..."
 CONFS=$(dirname $0)/confs
 
-VERSION=14.16.0
+VERSION=18
 PACKAGES="
     npm-check-updates
     http-server
