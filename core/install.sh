@@ -1,12 +1,10 @@
 #!/bin/bash
 
-SO=$(uname)
 WHO=$(id -u)
 HERE=$(dirname $0)
 
 clear
-
-echo " My Linux Workstation Config"
+echo " Linux Workstation Config (terminal + prograaming languages)"
 echo ""
 
 # Only root
