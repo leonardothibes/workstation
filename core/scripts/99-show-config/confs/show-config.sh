@@ -1,12 +1,12 @@
 #!/bin/bash
 
-php --version
-echo ""
-
 java -version
 echo ""
 
-ruby --version
+php --version | head -1 | cut -d- -f1
+echo ""
+
+ruby --version | cut -d'(' -f1
 echo ""
 
 python3 --version
