@@ -1,15 +1,15 @@
 #!/bin/bash
 
-ruby --version
-echo ""
-
-python3 --version
-echo ""
-
 php --version
 echo ""
 
 java -version
+echo ""
+
+ruby --version
+echo ""
+
+python3 --version
 echo ""
 
 echo "node `node --version`"
