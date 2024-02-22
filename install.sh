@@ -2,5 +2,6 @@
 
 clear
 echo " My Linux Workstation Config"
+HERE=$(dirname $0)
 
-./core/install.sh
+sh "${HERE}/core/install.sh"
