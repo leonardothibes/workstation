@@ -8,7 +8,7 @@ LOCK=/tmp/workstation.lock.docker
 
 # Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - > /dev/null 2>&1
-echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable" > /etc/apt/sources.list.d/docker.list
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu lunar stable" > /etc/apt/sources.list.d/docker.list
 
 apt-get update > /dev/null 2>&1
 apt-get install -y             \
