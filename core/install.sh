@@ -3,8 +3,8 @@
 WHO=$(id -u)
 HERE=$(dirname $0)
 
-clear
-echo " Linux Workstation Config (terminal + programing languages)"
+echo ""
+echo "   Terminal and programing languages"
 echo ""
 
 # Only root
