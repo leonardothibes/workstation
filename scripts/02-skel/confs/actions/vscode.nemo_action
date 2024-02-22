@@ -1,7 +1,7 @@
 [Nemo Action]
 Active=true
-Name=Abrir no VsCode
-Comment=Abrir no VsCode
+Name=Abrir no VSCode
+Comment=Abrir no VSCode
 Exec=/usr/bin/code "%F"
 Selection=none
 Extensions=any;
