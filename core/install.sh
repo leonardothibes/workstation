@@ -4,7 +4,7 @@ WHO=$(id -u)
 HERE=$(dirname $0)
 
 clear
-echo " Linux Workstation Config (terminal + prograaming languages)"
+echo " Linux Workstation Config (terminal + programing languages)"
 echo ""
 
 # Only root

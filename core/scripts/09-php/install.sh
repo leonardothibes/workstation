@@ -5,16 +5,13 @@ echo " - PHP..."
 export DEBIAN_FRONTEND=noninteractive
 CONFS=$(dirname $0)/confs
 BINS=$(dirname $0)/bin
-VERSION=7.4
+VERSION=8.1
 
 LOCK=/tmp/workstation.lock.php
 [ -f ${LOCK} ] && return
 
 # PHP
 apt-get install -y software-properties-common > /dev/null 2>&1
-add-apt-repository -y ppa:ondrej/php > /dev/null 2>&1
-apt-get update > /dev/null 2>&1
-
 apt-get install -y php${VERSION}          \
                    php${VERSION}-curl     \
                    php${VERSION}-gd       \
