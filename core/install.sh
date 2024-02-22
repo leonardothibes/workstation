@@ -3,17 +3,18 @@
 WHO=$(id -u)
 HERE=$(dirname $0)
 
-echo ""
-echo "   Terminal and programing languages"
-echo ""
-
 # Only root
 if [ ${WHO} -ne 0 ]; then
-	echo "Should be root!"
+    echo ""
+	echo " Should be root!"
     echo ""
 	exit 1
 fi
 # Only root
+
+echo ""
+echo "   Terminal and programing languages"
+echo ""
 
 # The magic happens here
 for DIR in $(ls ${HERE}/scripts)
