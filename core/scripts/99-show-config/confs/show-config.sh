@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo ""
 java -version
 echo ""
 
