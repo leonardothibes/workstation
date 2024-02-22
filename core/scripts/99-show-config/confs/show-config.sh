@@ -12,11 +12,14 @@ echo ""
 java -version
 echo ""
 
-echo "node.js `node --version`"
+echo "node `node --version`"
 echo ""
 
 echo "npm `npm --version`"
 echo ""
 
 echo "yarn `yarn --version`"
+echo ""
+
+echo "dotnet `dotnet --version`"
 echo ""
