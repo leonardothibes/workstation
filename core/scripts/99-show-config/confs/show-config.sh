@@ -37,6 +37,12 @@ echo ""
 echo `multipass --version | head -1`
 echo ""
 
+echo "git `git --version | cut -d' ' -f3`"
+echo ""
+
+echo "git-flow `git-flow version | cut -d' ' -f1`"
+echo ""
+
 echo "make `make --version | head -1 | cut -d' ' -f3`"
 echo ""
 
