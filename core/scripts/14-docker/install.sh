@@ -7,18 +7,16 @@ LOCK=/tmp/workstation.lock.docker
 [ -f ${LOCK} ] && return
 
 # Docker
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - > /dev/null 2>&1
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc 2>&1
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu lunar stable" > /etc/apt/sources.list.d/docker.list
 
 apt-get update > /dev/null 2>&1
-apt-get install -y             \
-    software-properties-common \
-    apt-transport-https        \
-    ca-certificates            \
-    gnupg-agent                \
-    docker-ce                  \
-    docker-ce-cli              \
-    containerd.io              \
+apt-get install -y        \
+    docker-ce             \
+    docker-ce-cli         \
+    containerd.io         \
+    docker-buildx-plugin  \
+    docker-compose-plugin \
 > /dev/null 2>&1
 # Docker
 
