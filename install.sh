@@ -2,7 +2,18 @@
 
 clear
 echo " My Linux Workstation Config"
+
+WHO=$(id -u)
 HERE=$(dirname $0)
+
+# Only root
+if [ ${WHO} -ne 0 ]; then
+    echo ""
+	echo " Should be root!"
+    echo ""
+	exit 1
+fi
+# Only root
 
 sh "${HERE}/core/install.sh"
 echo ""
