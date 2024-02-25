@@ -43,6 +43,9 @@ echo ""
 echo "git-flow `git-flow version | cut -d' ' -f1`"
 echo ""
 
+echo "aws `aws --version | cut -d'/' -f2 | cut -d' ' -f1`"
+echo ""
+
 echo "make `make --version | head -1 | cut -d' ' -f3`"
 echo ""
 
