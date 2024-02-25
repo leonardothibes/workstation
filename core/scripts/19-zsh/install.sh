@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " - ZSH..."
+echo " - Zsh..."
 CONFS=$(dirname $0)/confs
 
 LOCK=/tmp/workstation.lock.zsh
