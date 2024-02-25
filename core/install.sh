@@ -24,7 +24,3 @@ do
     sh ${SCRIPT}
 done
 # The magic happens here
-
-echo ""
-echo " Done!"
-echo ""
