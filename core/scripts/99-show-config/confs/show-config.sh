@@ -10,7 +10,7 @@ echo ""
 ruby --version | cut -d'(' -f1
 echo ""
 
-python3 --version
+echo "python `python3 --version | cut -d' ' -f2`"
 echo ""
 
 echo "node `node --version`"
