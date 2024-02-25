@@ -25,6 +25,12 @@ echo ""
 echo "dotnet `dotnet --version`"
 echo ""
 
+echo "docker `docker --version | cut -d',' -f1 | cut -d' ' -f3`"
+echo ""
+
+echo "docker-compose `docker-compose --version | cut -d',' -f1 | cut -d' ' -f3`"
+echo ""
+
 echo "make `make --version | head -1 | cut -d' ' -f3`"
 echo ""
 
