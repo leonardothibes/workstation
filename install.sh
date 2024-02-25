@@ -18,6 +18,5 @@ echo ""
 echo "  ngrok config add-authtoken your-token-here"
 echo ""
 
-echo ""
 echo " Done!"
 echo ""
