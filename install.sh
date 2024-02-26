@@ -34,6 +34,7 @@ echo "  git config --global user.email \"leonardothibes@gmail.com\""
 echo ""
 
 echo " SSH"
+echo "  mkdir ~/.ssh"
 echo "  cd ~/.ssh"
 echo "  ssh-keygen -t rsa -b 2048"
 echo ""
