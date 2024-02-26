@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo " - Removing unnecessary internet..."
-TMP=/tmp
 
 LOCK=/tmp/workstation.lock.unnecessary.internet
 [ -f ${LOCK} ] && return

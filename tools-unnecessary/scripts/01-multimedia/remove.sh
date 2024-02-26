@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo " - Removing unnecessary multimedia..."
-TMP=/tmp
 
 LOCK=/tmp/workstation.lock.unnecessary.multimedia
 [ -f ${LOCK} ] && return
