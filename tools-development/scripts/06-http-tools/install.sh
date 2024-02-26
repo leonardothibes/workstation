@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " - Postman and Insomnia..."
+echo " - HTTP Tools..."
 
 LOCK=/tmp/workstation.lock.postman_and_insomnia
 [ -f ${LOCK} ] && return
