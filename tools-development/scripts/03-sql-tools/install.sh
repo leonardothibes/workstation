@@ -18,6 +18,13 @@ cp -f $FILES/postbird/postbird.png     /usr/share/pixmaps
 cp -f $FILES/postbird/postbird.desktop /usr/share/applications
 # Postbird
 
+# MySQL Workbench
+snap install mysql-workbench-community > /dev/null 2>&1
+
+cp -f $FILES/mysql-workbench/mysql-workbench-community.png     /usr/share/pixmaps
+cp -f $FILES/mysql-workbench/mysql-workbench-community.desktop /usr/share/applications
+# MySQL Workbench
+
 apt-get install -y sqlitebrowser                                      > /dev/null 2>&1
 flatpak install -y --noninteractive flathub io.beekeeperstudio.Studio > /dev/null 2>&1
 

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MySQL Workbench
+Exec=mysql-workbench-community
+Icon=mysql-workbench-community
+Terminal=false
+Type=Application
+Categories=Development;
+Comment=MySQL GUI client
