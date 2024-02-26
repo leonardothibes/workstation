@@ -3,11 +3,8 @@
 echo " - SQL Tools..."
 FILES=$(dirname $0)/files
 
-LOCK=/tmp/workstation.lock.sqltools
+LOCK=/tmp/workstation.lock.sql_tools
 [ -f ${LOCK} ] && return
-
-apt-get install -y sqlitebrowser                                      > /dev/null 2>&1
-flatpak install -y --noninteractive flathub io.beekeeperstudio.Studio > /dev/null 2>&1
 
 # Postbird
 URL="https://github.com/Paxa/postbird/releases/download/0.8.4/Postbird_0.8.4_amd64.deb"
@@ -20,5 +17,8 @@ rm -f $FILE
 [ -f /usr/share/pixmaps ]      || cp -f $FILES/postbird.png /usr/share/pixmaps
 [ -f /usr/share/applications ] || cp -f $FILES/postbird.png /usr/share/applications
 # Postbird
+
+apt-get install -y sqlitebrowser                                      > /dev/null 2>&1
+flatpak install -y --noninteractive flathub io.beekeeperstudio.Studio > /dev/null 2>&1
 
 > ${LOCK}
