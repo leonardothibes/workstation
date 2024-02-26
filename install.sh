@@ -18,6 +18,7 @@ fi
 # Only root
 
 sh "${HERE}/core/install.sh"
+sh "${HERE}/tools-development/install.sh"
 echo ""
 
 echo "---------------------"
