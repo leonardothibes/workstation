@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo " - SQLite Browser..."
-TMP=/tmp
 
 LOCK=/tmp/workstation.lock.sqlitebrowser
 [ -f ${LOCK} ] && return

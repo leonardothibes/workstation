@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo " - Merge Tools..."
-TMP=/tmp
 
 LOCK=/tmp/workstation.lock.merge_tools
 [ -f ${LOCK} ] && return

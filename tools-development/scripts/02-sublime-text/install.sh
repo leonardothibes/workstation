@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo " - Sublime Text..."
-TMP=/tmp
 
 LOCK=/tmp/workstation.lock.sublime
 [ -f ${LOCK} ] && return
