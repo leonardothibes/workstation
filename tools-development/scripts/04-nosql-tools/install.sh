@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo " - NoSQL Tools..."
+FILES=$(dirname $0)/files
 
 LOCK=/tmp/workstation.lock.nosql_tools
 [ -f ${LOCK} ] && return
@@ -14,7 +15,11 @@ dpkg -i $FILE > /dev/null 2>&1
 rm -f $FILE
 # MongoDB Compass
 
-flatpak install -y --noninteractive flathub com.redis.RedisInsight > /dev/null 2>&1
-snap install another-redis-desktop-manager                         > /dev/null 2>&1
+# Another Redis Desktop Manager
+snap install another-redis-desktop-manager > /dev/null 2>&1
+
+cp -f ${FILES}/rdm/redis.png                     /usr/share/pixmaps
+cp -f ${FILES}/rdm/redis-desktop-manager.desktop /usr/share/applications
+# Another Redis Desktop Manager
 
 > ${LOCK}
