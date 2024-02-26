@@ -29,8 +29,8 @@ echo ""
 
 echo " GIT"
 echo ""
-echo "  git config --global user.name \"Leonardo Thibes\""
-echo "  git config --global user.email \"leonardothibes@gmail.com\""
+echo "  git config --global user.name \"Your Name\""
+echo "  git config --global user.email \"your-email@gmail.com\""
 echo ""
 
 echo " SSH"
