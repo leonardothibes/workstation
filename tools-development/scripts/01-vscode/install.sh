@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "       - Visual Studio Code..."
+echo " - Visual Studio Code..."
 TMP=/tmp
 
 LOCK=/tmp/workstation.lock.vscode
