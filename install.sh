@@ -1,7 +1,9 @@
 #!/bin/bash
 
 clear
+echo "----------------------------"
 echo " My Linux Workstation Config"
+echo "----------------------------"
 
 WHO=$(id -u)
 HERE=$(dirname $0)
@@ -18,6 +20,11 @@ fi
 sh "${HERE}/core/install.sh"
 echo ""
 
+echo "---------------------"
+echo " Final configurations"
+echo "---------------------"
+echo ""
+
 echo " GIT"
 echo ""
 echo "  git config --global user.name \"Leonardo Thibes\""
@@ -27,7 +34,4 @@ echo ""
 echo " NGROK"
 echo ""
 echo "  ngrok config add-authtoken your-token-here"
-echo ""
-
-echo " Done!"
 echo ""
