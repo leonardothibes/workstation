@@ -15,5 +15,6 @@ rm -f $FILE
 # MongoDB Compass
 
 flatpak install -y --noninteractive flathub com.redis.RedisInsight > /dev/null 2>&1
+snap install another-redis-desktop-manager                         > /dev/null 2>&1
 
 > ${LOCK}
