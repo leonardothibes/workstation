@@ -14,8 +14,8 @@ wget -q $URL -O $FILE
 dpkg -i $FILE > /dev/null 2>&1
 rm -f $FILE
 
-[ -f /usr/share/pixmaps ]      || cp -f $FILES/postbird.png /usr/share/pixmaps
-[ -f /usr/share/applications ] || cp -f $FILES/postbird.png /usr/share/applications
+cp -f $FILES/postbird/postbird.png     /usr/share/pixmaps
+cp -f $FILES/postbird/postbird.desktop /usr/share/applications
 # Postbird
 
 apt-get install -y sqlitebrowser                                      > /dev/null 2>&1
