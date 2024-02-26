@@ -33,6 +33,11 @@ echo "  git config --global user.name \"Leonardo Thibes\""
 echo "  git config --global user.email \"leonardothibes@gmail.com\""
 echo ""
 
+echo " SSH"
+echo "  cd ~/.ssh"
+echo "  ssh-keygen -t rsa -b 2048"
+echo ""
+
 echo " NGROK"
 echo ""
 echo "  ngrok config add-authtoken your-token-here"
