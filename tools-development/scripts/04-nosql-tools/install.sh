@@ -13,6 +13,8 @@ FILE=/tmp/mongod-compass.deb
 curl -s $URL -o $FILE
 dpkg -i $FILE > /dev/null 2>&1
 rm -f $FILE
+
+cp -f ${FILES}/mongodb-compass/mongodb-compass.desktop /usr/share/applications
 # MongoDB Compass
 
 # Another Redis Desktop Manager
