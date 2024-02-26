@@ -17,6 +17,7 @@ apt-get install -y apt-transport-https       \
                    unzip                     \
                    build-essential           \
                    mysql-client              \
+                   postgresql-client-common  \
 > /dev/null 2>&1
 
 > ${LOCK}
