@@ -7,12 +7,7 @@ LOCK=/tmp/workstation.lock.sql_tools
 [ -f ${LOCK} ] && return
 
 # Postbird
-URL="https://github.com/Paxa/postbird/releases/download/0.8.4/Postbird_0.8.4_amd64.deb"
-FILE=/tmp/postbird.deb
-
-wget -q $URL -O $FILE
-dpkg -i $FILE > /dev/null 2>&1
-rm -f $FILE
+sudo snap install postbird
 
 cp -f $FILES/postbird/postbird.png     /usr/share/pixmaps
 cp -f $FILES/postbird/postbird.desktop /usr/share/applications
@@ -25,7 +20,10 @@ cp -f $FILES/mysql-workbench/mysql-workbench-community.png     /usr/share/pixmap
 cp -f $FILES/mysql-workbench/mysql-workbench-community.desktop /usr/share/applications
 # MySQL Workbench
 
-apt-get install -y sqlitebrowser                                      > /dev/null 2>&1
+# SQLite Browser
+apt-get install -y sqlitebrowser > /dev/null 2>&1
+
+# Beekeeper Studio
 flatpak install -y --noninteractive flathub io.beekeeperstudio.Studio > /dev/null 2>&1
 
 > ${LOCK}
