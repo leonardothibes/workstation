@@ -7,7 +7,7 @@ LOCK=/tmp/workstation.lock.sql_tools
 [ -f ${LOCK} ] && return
 
 # Postbird
-sudo snap install postbird
+sudo snap install postbird > /dev/null 2>&1
 
 cp -f $FILES/postbird/postbird.png     /usr/share/pixmaps
 cp -f $FILES/postbird/postbird.desktop /usr/share/applications
@@ -15,10 +15,6 @@ cp -f $FILES/postbird/postbird.desktop /usr/share/applications
 
 # MySQL Workbench
 snap install mysql-workbench-community > /dev/null 2>&1
-
-cp -f $FILES/mysql-workbench/mysql-workbench-community.png     /usr/share/pixmaps
-cp -f $FILES/mysql-workbench/mysql-workbench-community.desktop /usr/share/applications
-# MySQL Workbench
 
 # SQLite Browser
 apt-get install -y sqlitebrowser > /dev/null 2>&1
