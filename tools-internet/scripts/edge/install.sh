@@ -5,11 +5,8 @@ echo " - Microsoft Edge..."
 LOCK=/tmp/workstation.lock.internet.edge
 [ -f ${LOCK} ] && return
 
-VERSION=122.0.2365.63-1
-URL=https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_${VERSION}_amd64.deb?brand=M102
-DEB=/tmp/edge.deb
-
-[ -f $DEB ] || wget -q $URL -O $DEB
-[ -f $DEB ] && dpkg -i $DEB > /dev/null 2>&1
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge/ stable main" > /etc/apt/sources.list.d/microsoft-edge.list
+apt-get update                           > /dev/null 2>&1
+apt-get install -y microsoft-edge-stable > /dev/null 2>&1
 
 > ${LOCK}
