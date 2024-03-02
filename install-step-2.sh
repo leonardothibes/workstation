@@ -18,3 +18,5 @@ fi
 # Only root
 
 sh "${HERE}/tools-internet/install.sh"
+sh "${HERE}/tools-graphics/install.sh"
+echo ""
