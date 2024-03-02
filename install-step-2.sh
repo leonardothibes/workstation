@@ -19,4 +19,5 @@ fi
 
 sh "${HERE}/tools-internet/install.sh"
 sh "${HERE}/tools-graphics/install.sh"
+sh "${HERE}/tools-office/install.sh"
 echo ""
