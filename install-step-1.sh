@@ -1,9 +1,9 @@
 #!/bin/bash
 
 clear
-echo "----------------------------"
-echo " My Linux Workstation Config"
-echo "----------------------------"
+echo "-------------------------------------"
+echo " My Linux Workstation Config - step 1"
+echo "-------------------------------------"
 
 WHO=$(id -u)
 HERE=$(dirname $0)
@@ -22,9 +22,9 @@ sh "${HERE}/tools-development/install.sh"
 sh "${HERE}/tools-unnecessary/remove.sh"
 
 echo ""
-echo "---------------------"
-echo " Final configurations"
-echo "---------------------"
+echo "----------------"
+echo " Tips and Tricks"
+echo "----------------"
 echo ""
 
 echo " GIT"
