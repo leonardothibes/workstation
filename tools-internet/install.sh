@@ -14,7 +14,7 @@ fi
 
 echo ""
 echo "   Internet Tools"
-echo "   -----------------"
+echo "   --------------"
 echo ""
 
 # The magic happens here
