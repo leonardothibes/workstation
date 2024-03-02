@@ -16,7 +16,7 @@ sudo ./install.sh
 Compatibility list
 ------------------
 
- * Linux Mint 21.1
+ * Linux Mint 21.3
 
 Manual installations
 --------------------
@@ -46,7 +46,7 @@ Author
 LICENSE
 =======
 
-Copyright (c) 2018-2023 Leonardo Thibes
+Copyright (c) 2018-2024 Leonardo Thibes
 
 The MIT License
 

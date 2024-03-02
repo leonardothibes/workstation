@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postbird
+Exec=postbird
+Icon=postbird
+Terminal=false
+Type=Application
+Categories=Development;
+Comment=PostgreSQL GUI client

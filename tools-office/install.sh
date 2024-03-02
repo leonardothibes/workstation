@@ -13,8 +13,8 @@ fi
 # Only root
 
 echo ""
-echo "   Terminal and programing languages"
-echo "   ---------------------------------"
+echo "   Office Tools"
+echo "   ------------"
 echo ""
 
 # The magic happens here

@@ -13,14 +13,14 @@ fi
 # Only root
 
 echo ""
-echo "   Terminal and programing languages"
-echo "   ---------------------------------"
+echo "   Removing unnecessary softwre"
+echo "   ----------------------------"
 echo ""
 
 # The magic happens here
 for DIR in $(ls ${HERE}/scripts)
 do
-    SCRIPT="${HERE}/scripts/${DIR}/install.sh"
+    SCRIPT="${HERE}/scripts/${DIR}/remove.sh"
     chmod 755 ${SCRIPT}
     sh ${SCRIPT}
 done
